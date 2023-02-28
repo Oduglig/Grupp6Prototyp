@@ -13480,7 +13480,6 @@ MonoBehaviour:
   m_Script: {fileID: 986417472}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &424079002
 Transform:
   m_ObjectHideFlags: 19
@@ -47167,12 +47166,12 @@ PrefabInstance:
     - target: {fileID: 1034536919964190893, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: mouseSens.x
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1034536919964190893, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: mouseSens.y
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1783532223413671984, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
@@ -66660,6 +66659,7 @@ GameObject:
   - component: {fileID: 2592919286764648073}
   - component: {fileID: 2592919286764648074}
   - component: {fileID: 2592919286764648075}
+  - component: {fileID: 2592919286764648120}
   m_Layer: 8
   m_Name: Lever
   m_TagString: Untagged
@@ -66875,14 +66875,32 @@ MonoBehaviour:
   isDisabled: 0
   breakForce: 35
   playerInteract: {fileID: 0}
+  objectHealth: {fileID: 0}
   stackNormalThreshold: 0.5
   lockCooldown: 0.1
+  damageVelocity: 30
   canBePickedUp: 1
+  canTakeDamageFromForce: 0
   canBeRotated: 0
   alwaysLockOnRelease: 0
   keepRestraints: 0
   objectSoundController: {fileID: 2592919286764648118}
   pickedUp: 0
+--- !u!114 &2592919286764648120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592919286764648077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1251556126d84b74984c42c72411e602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 0
+  hurtCooldownTime: 0
 --- !u!1001 &2820351028008215423
 PrefabInstance:
   m_ObjectHideFlags: 0
