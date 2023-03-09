@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 262.38354, g: 325.1084, b: 430.30957, a: 1}
+  m_IndirectSpecularColor: {r: 0.14179224, g: 0.104044616, b: 0.066816986, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -50896,7 +50896,7 @@ PrefabInstance:
     - target: {fileID: 1089273623835128668, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.47
+      value: 111.3
       objectReference: {fileID: 0}
     - target: {fileID: 1089273623835128668, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
@@ -50906,12 +50906,12 @@ PrefabInstance:
     - target: {fileID: 1089273623835128668, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -92.11
+      value: 51.7
       objectReference: {fileID: 0}
     - target: {fileID: 1089273623835128668, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.1306107
+      value: 0.6983004
       objectReference: {fileID: 0}
     - target: {fileID: 1089273623835128668, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
@@ -50921,7 +50921,7 @@ PrefabInstance:
     - target: {fileID: 1089273623835128668, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.99143374
+      value: -0.7158049
       objectReference: {fileID: 0}
     - target: {fileID: 1089273623835128668, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
@@ -50931,7 +50931,7 @@ PrefabInstance:
     - target: {fileID: 1089273623835128668, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -195.01
+      value: -91.418
       objectReference: {fileID: 0}
     - target: {fileID: 1783532223413671984, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
@@ -77255,7 +77255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1494535783
 Transform:
   m_ObjectHideFlags: 0
