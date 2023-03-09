@@ -21,7 +21,7 @@ public enum BackgroundMusicEvents
     BGM1,
     BGM2,
     SafeRoom,
-    Dialogue
+    Ambience
 }
 
 public enum DialogoueEvents

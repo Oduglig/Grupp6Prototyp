@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using FMODUnity;
 public class SpikeTrap : Activators
 {
     public bool isInUse = false;
@@ -11,10 +11,15 @@ public class SpikeTrap : Activators
     [SerializeField] private float spikeShootLenght;
     [SerializeField] private BoxCollider collider;
     private float spikeStartHeight;
+    [SerializeField] private bool ejectAndDestroy = false;
+    [SerializeField] EventReference SpikeTrapEventRef;
 
     void Start() {
         spikeRB.isKinematic = true;
-        spikeStartHeight = spikeRB.transform.position.y;
+        spikeStartHeight = transform.localPosition.y;
+        
+        // Get the FMOD event instance
+        RuntimeManager.CreateInstance(SpikeTrapEventRef);
     }
     public override void ChangeState(bool toState)
     {
@@ -31,27 +36,34 @@ public class SpikeTrap : Activators
     IEnumerator EjectSpikes() {
 
         collider.enabled = true;
+        // Play the FMOD event on hover
+        RuntimeManager.PlayOneShot(SpikeTrapEventRef);
         
         //  Code For Opening the spiketrap
-        while (spikeRB.transform.localPosition.y < spikeStartHeight + spikeShootLenght) {
-            spikeRB.MovePosition(spikeRB.transform.position + spikeRB.transform.up * spikeSpeed * Time.deltaTime);
+        while (transform.localPosition.y < spikeStartHeight + spikeShootLenght) {
+            spikeRB.MovePosition(transform.position + transform.up * spikeSpeed * Time.deltaTime);
             yield return null;
         }
         
-        //  Delay before closing
-        yield return new WaitForSeconds(spikeResetTime);
-        StartCoroutine(ResetSpikes());
+        if (!ejectAndDestroy) {
+            //  Delay before closing
+            yield return new WaitForSeconds(spikeResetTime);
+            StartCoroutine(ResetSpikes());
+        }
+        else
+            Destroy(gameObject, 0.1f);
+
     }
 
     private IEnumerator ResetSpikes() {
+
         
         //  Code For Closing the spikestrap
-        while (spikeRB.transform.localPosition.y > spikeStartHeight) {
-            spikeRB.MovePosition(spikeRB.transform.position - spikeRB.transform.up * spikeSpeed * Time.deltaTime);
+        while (transform.localPosition.y > spikeStartHeight) {
+            spikeRB.MovePosition(transform.position - transform.up * spikeSpeed * Time.deltaTime);
             yield return null;
         }
         
-        spikeRB.MovePosition(new Vector3(transform.position.x, spikeStartHeight, transform.position.z));
         //  Delay beore being able to activate trap again
         yield return new WaitForSeconds(spikeResetTime);
         isInUse = false;
