@@ -13,11 +13,12 @@ public class GeneralPlayerInputs : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("PauseButton")) {
-            if (pauseMenu != null) {
-                if (!gameIsPaused) 
-                    PauseGame();
-                else 
-                    UnpauseGame();
+            
+            if (!gameIsPaused) {
+                PauseGame();
+            }
+            else {
+                UnpauseGame();
             }
         }
     }

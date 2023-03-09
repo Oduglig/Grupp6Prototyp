@@ -10,7 +10,6 @@ public class OptionsScreen : MonoBehaviour
 
     public List<ResItem> resolutions = new List<ResItem>();
     public List<QualityItem> qualities = new List<QualityItem>();
-    [SerializeField] private PlayerData playerData;
     private int selectedResolution;
     private int selectedQuality;
 
@@ -18,10 +17,8 @@ public class OptionsScreen : MonoBehaviour
     public TMP_Text qualityLabel;
 
 
-    public TMP_Text mastLabel;
-    public Slider volumeSlider;
-    public Slider sensSlider;
-    public Toggle subtitlesBool;
+    public TMP_Text mastLabel/*, musicLabel, sfxLabel */;
+    public Slider mastSlider/*, musicSlider, sfxSlider */;
 
 
     // Start is called before the first frame update
@@ -118,7 +115,7 @@ public class OptionsScreen : MonoBehaviour
 
     public void SetMasterVol()
     {
-        mastLabel.text = Mathf.RoundToInt(volumeSlider.value * 100).ToString();
+        mastLabel.text = Mathf.RoundToInt(mastSlider.value + 80).ToString();
     }
 
 
@@ -130,9 +127,6 @@ public class OptionsScreen : MonoBehaviour
         //Screen.fullScreen = fullscreenTog.isOn;
 
         Screen.SetResolution(resolutions[selectedResolution].horizontal, resolutions[selectedResolution].vertical, fullscreenTog.isOn);
-        playerData.audioLevel = volumeSlider.value;
-        playerData.mouseSensitivity = sensSlider.value;
-        playerData.subtitlesIsOn = subtitlesBool.isOn;
     }
 
 
