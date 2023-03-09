@@ -17,9 +17,6 @@ GameObject:
   - component: {fileID: 537342473842109881}
   - component: {fileID: 5237138906853396262}
   - component: {fileID: 4835752027242560923}
-  - component: {fileID: 7656661471024721843}
-  - component: {fileID: 4684442551015619290}
-  - component: {fileID: 4062420520308196587}
   m_Layer: 12
   m_Name: DoorWithHandle
   m_TagString: Untagged
@@ -57,12 +54,8 @@ MonoBehaviour:
   isDisabled: 0
   breakForce: 35
   playerInteract: {fileID: 0}
-  objectHealth: {fileID: 0}
   stackNormalThreshold: 0.5
   lockCooldown: 0.1
-  damageVelocity: 30
-  canBePickedUp: 1
-  canTakeDamageFromForce: 0
   canBeRotated: 0
   alwaysLockOnRelease: 0
   keepRestraints: 1
@@ -238,107 +231,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2549713875122298647}
   m_Mesh: {fileID: 2619086233303812490, guid: d112aac43e102ed4fbfc9a6a8eabbbb8, type: 3}
---- !u!114 &7656661471024721843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2549713875122298647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1251556126d84b74984c42c72411e602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 0
-  hurtCooldownTime: 0
---- !u!114 &4684442551015619290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2549713875122298647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
---- !u!114 &4062420520308196587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2549713875122298647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDisabled: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  motorSpeed: 1
-  motorForce: 15
-  creakMinVelocity: 1
-  hinge: {fileID: 0}
-  physicsObject: {fileID: 0}
-  animator: {fileID: 0}
-  rigidbody: {fileID: 0}
-  DOOR_Open:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  DOOR_Close:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  DOOR_Open_Puzzle:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  DoorCreak:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  creakEmitter: {fileID: 0}
-  closeEmitter: {fileID: 0}
-  isOpening: 0
-  isClosing: 0
 --- !u!1 &2555185880919964763
 GameObject:
   m_ObjectHideFlags: 0
