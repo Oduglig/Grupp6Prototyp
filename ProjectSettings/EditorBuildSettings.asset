@@ -35,7 +35,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/#Personal/Sebastian Design/Level 2.unity
     guid: e39f0026343d3834b95b3f1f553c728f
-  - enabled: 1
-    path: Assets/#Personal/Sebastian Design/ratclub.unity
-    guid: 195c97eab3833e14191a5f661cb9fa46
   m_configObjects: {}
