@@ -535,6 +535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4539607939062182121}
   - component: {fileID: 7279499271390857977}
+  - component: {fileID: 5036569678981973011}
   m_Layer: 5
   m_Name: SettingsMenu
   m_TagString: Untagged
@@ -590,6 +591,28 @@ MonoBehaviour:
   paramValue: 0
   ignoreSeek: 0
   pauseManager: {fileID: 0}
+--- !u!114 &5036569678981973011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398234291547218104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5754f7fac739e1f47a42b9afa7d6deb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullscreenTog: {fileID: 1413057897788039026}
+  resolutions: []
+  qualities: []
+  resolutionLabel: {fileID: 3281754578014374875}
+  qualityLabel: {fileID: 5041771065212292734}
+  mastLabel: {fileID: 7701651167317906240}
+  volumeSlider: {fileID: 1452651130799357149}
+  sensSlider: {fileID: 7848311125105079906}
+  subtitleBool: {fileID: 3300145482888365870}
+  playerData: {fileID: 11400000, guid: 5398cc1eb9aa4c94289ce508763178b8, type: 2}
 --- !u!1 &508847055752133566
 GameObject:
   m_ObjectHideFlags: 0
@@ -10758,10 +10781,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 7543887948991260207}
   m_HandleRect: {fileID: 7440917743890211013}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 20
+  m_MinValue: 0
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: -30
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
