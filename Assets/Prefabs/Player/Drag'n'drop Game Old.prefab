@@ -197,6 +197,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1452651130799357149, guid: c603d09f6b2eca14aac88c3d78b4fda0,
         type: 3}
+      propertyPath: m_Value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452651130799357149, guid: c603d09f6b2eca14aac88c3d78b4fda0,
+        type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -678,13 +683,13 @@ MonoBehaviour:
   fullscreenTog: {fileID: 6633477778487322821}
   resolutions: []
   qualities: []
-  playerData: {fileID: 11400000, guid: 5398cc1eb9aa4c94289ce508763178b8, type: 2}
   resolutionLabel: {fileID: 7068903370766384236}
   qualityLabel: {fileID: 749022905924991433}
   mastLabel: {fileID: 2632944219590962794}
   volumeSlider: {fileID: 6609651266706803562}
   sensSlider: {fileID: 2555833667263529429}
-  subtitlesBool: {fileID: 7088261862784217241}
+  subtitleBool: {fileID: 7088261862784217241}
+  playerData: {fileID: 11400000, guid: 5398cc1eb9aa4c94289ce508763178b8, type: 2}
 --- !u!1 &5376977548351868524 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 363723774213487067, guid: c603d09f6b2eca14aac88c3d78b4fda0,

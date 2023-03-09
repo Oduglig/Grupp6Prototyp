@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14179224, g: 0.104044616, b: 0.066816986, a: 1}
+  m_IndirectSpecularColor: {r: 0.1417908, g: 0.104044855, b: 0.066817224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -929,40 +929,40 @@ MonoBehaviour:
   motorSpeed: 1
   motorForce: 15
   creakMinVelocity: 1
-  hinge: {fileID: 0}
-  physicsObject: {fileID: 0}
-  animator: {fileID: 46196688}
-  rigidbody: {fileID: 0}
+  hinge: {fileID: 46196696}
+  physicsObject: {fileID: 46196695}
+  animator: {fileID: 1598861984}
+  rigidbody: {fileID: 46196698}
   DOOR_Open:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 805928920
+      Data2: 1334060161
+      Data3: 414494354
+      Data4: 607578039
+    Path: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorOpen
   DOOR_Close:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 345908133
+      Data2: 1325929581
+      Data3: -1667629936
+      Data4: 2006240549
+    Path: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorClose
   DOOR_Open_Puzzle:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1698730938
+      Data2: 1242584031
+      Data3: 1823237788
+      Data4: 139476805
+    Path: event:/Interactive/DOOR/SILENCE EVENT
   DoorCreak:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  creakEmitter: {fileID: 0}
-  closeEmitter: {fileID: 0}
+      Data1: -779977397
+      Data2: 1101032667
+      Data3: -339468406
+      Data4: 1189039994
+    Path: event:/Interactive/DOOR/DOORCreak
+  creakEmitter: {fileID: 967080276}
+  closeEmitter: {fileID: 967080276}
   isOpening: 0
   isClosing: 0
 --- !u!95 &46196688
@@ -985,102 +985,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!82 &46196689
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!114 &46196695 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 758913713909005265, guid: 7f9d84742d3ee5d468060ced45a3e93e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1238710741}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46196685}
   m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee1a28932ecbb548814f52aedcc2c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!59 &46196696 stripped
+HingeJoint:
+  m_CorrespondingSourceObject: {fileID: 6902320577875950489, guid: 7f9d84742d3ee5d468060ced45a3e93e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1238710741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &46196698 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 8532470468026578400, guid: 7f9d84742d3ee5d468060ced45a3e93e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1238710741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &51590128
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,13 +1932,13 @@ MonoBehaviour:
   - qualityText: Classic
   - qualityText: Unchanged
   - qualityText: Still the same
-  playerData: {fileID: 11400000, guid: 5398cc1eb9aa4c94289ce508763178b8, type: 2}
   resolutionLabel: {fileID: 51590130}
   qualityLabel: {fileID: 932916048}
   mastLabel: {fileID: 1356171414}
   volumeSlider: {fileID: 1760672897}
   sensSlider: {fileID: 477920671}
-  subtitlesBool: {fileID: 1518247831}
+  subtitleBool: {fileID: 0}
+  playerData: {fileID: 11400000, guid: 5398cc1eb9aa4c94289ce508763178b8, type: 2}
 --- !u!1001 &117607009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5589,7 +5517,6 @@ MonoBehaviour:
   m_Script: {fileID: 986417472}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &424079002
 Transform:
   m_ObjectHideFlags: 19
@@ -8671,8 +8598,8 @@ GameObject:
   m_Component:
   - component: {fileID: 731792531}
   - component: {fileID: 731792530}
-  - component: {fileID: 731792529}
   - component: {fileID: 731792528}
+  - component: {fileID: 731792532}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -8804,14 +8731,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &731792529
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731792527}
-  m_Enabled: 1
 --- !u!20 &731792530
 Camera:
   m_ObjectHideFlags: 0
@@ -8870,6 +8789,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &731792532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731792527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1001 &734664111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11359,6 +11292,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &967080276 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7664711927611511580, guid: c7028ed55677cc64b9929e53045906fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1477560232}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &969340020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17524,12 +17469,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5302568919011541938, guid: ac9b7772e3ca1d84693fd440bb91ff6c, type: 3}
---- !u!95 &1371114825 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6112831897052178911, guid: 37eca1b83ce9b2e4489b753e09fcb1a9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1977267366}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1376708167
 GameObject:
   m_ObjectHideFlags: 0
@@ -18380,138 +18319,42 @@ MonoBehaviour:
   motorSpeed: 1
   motorForce: 15
   creakMinVelocity: 1
-  hinge: {fileID: 0}
-  physicsObject: {fileID: 0}
-  animator: {fileID: 1371114825}
-  rigidbody: {fileID: 0}
+  hinge: {fileID: 46196696}
+  physicsObject: {fileID: 46196695}
+  animator: {fileID: 1598861984}
+  rigidbody: {fileID: 46196698}
   DOOR_Open:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 805928920
+      Data2: 1334060161
+      Data3: 414494354
+      Data4: 607578039
+    Path: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorOpen
   DOOR_Close:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 345908133
+      Data2: 1325929581
+      Data3: -1667629936
+      Data4: 2006240549
+    Path: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorClose
   DOOR_Open_Puzzle:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1698730938
+      Data2: 1242584031
+      Data3: 1823237788
+      Data4: 139476805
+    Path: event:/Interactive/DOOR/SILENCE EVENT
   DoorCreak:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  creakEmitter: {fileID: 0}
-  closeEmitter: {fileID: 0}
+      Data1: -779977397
+      Data2: 1101032667
+      Data3: -339468406
+      Data4: 1189039994
+    Path: event:/Interactive/DOOR/DOORCreak
+  creakEmitter: {fileID: 967080276}
+  closeEmitter: {fileID: 967080276}
   isOpening: 0
   isClosing: 0
---- !u!82 &1432159343
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1432159329}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1437375720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -344004081357383697, guid: f0ca1060e80dfaf459d77e1e5cf42694,
@@ -21425,158 +21268,48 @@ MonoBehaviour:
   motorSpeed: 1
   motorForce: 15
   creakMinVelocity: 1
-  hinge: {fileID: 0}
-  physicsObject: {fileID: 0}
+  hinge: {fileID: 46196696}
+  physicsObject: {fileID: 46196695}
   animator: {fileID: 1598861984}
-  rigidbody: {fileID: 0}
+  rigidbody: {fileID: 46196698}
   DOOR_Open:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 805928920
+      Data2: 1334060161
+      Data3: 414494354
+      Data4: 607578039
+    Path: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorOpen
   DOOR_Close:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 345908133
+      Data2: 1325929581
+      Data3: -1667629936
+      Data4: 2006240549
+    Path: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorClose
   DOOR_Open_Puzzle:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1698730938
+      Data2: 1242584031
+      Data3: 1823237788
+      Data4: 139476805
+    Path: event:/Interactive/DOOR/SILENCE EVENT
   DoorCreak:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  creakEmitter: {fileID: 0}
-  closeEmitter: {fileID: 0}
+      Data1: -779977397
+      Data2: 1101032667
+      Data3: -339468406
+      Data4: 1189039994
+    Path: event:/Interactive/DOOR/DOORCreak
+  creakEmitter: {fileID: 967080276}
+  closeEmitter: {fileID: 967080276}
   isOpening: 0
   isClosing: 0
---- !u!95 &1598861984
+--- !u!95 &1598861984 stripped
 Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6184457096178714162, guid: 7f9d84742d3ee5d468060ced45a3e93e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1598861975}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598861979}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8732114644a21cd4aba2a95a411dacbe, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!82 &1598861985
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598861979}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1600637085
 GameObject:
   m_ObjectHideFlags: 0

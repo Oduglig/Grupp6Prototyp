@@ -232,13 +232,32 @@ MonoBehaviour:
   isDisabled: 0
   breakForce: 35
   playerInteract: {fileID: 0}
+  objectHealth: {fileID: 0}
   stackNormalThreshold: 0.5
   lockCooldown: 0.1
+  damageVelocity: 30
+  canBePickedUp: 1
+  canTakeDamageFromForce: 0
   canBeRotated: 0
   alwaysLockOnRelease: 0
   keepRestraints: 1
   objectSoundController: {fileID: 8005813795805914993}
   pickedUp: 0
+--- !u!114 &4048642960702719880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5144002684303153806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1251556126d84b74984c42c72411e602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 0
+  hurtCooldownTime: 0
 --- !u!114 &4571271878210696035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resetStateOnDeactivation: 1
   stateHasToBeDifferent: 1
   requireAllForActivation: 1
   activateAllTargets: 1
@@ -314,6 +334,26 @@ MonoBehaviour:
       Data3: -1924431227
       Data4: 106652457
     Path: event:/Objects/ChestOpen
+--- !u!95 &6184457096178714162
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5144002684303153806}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8732114644a21cd4aba2a95a411dacbe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7933427872281217406 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8007159815193960497, guid: 3ad56ecdf3477b14fa1f3ec37e74888e,

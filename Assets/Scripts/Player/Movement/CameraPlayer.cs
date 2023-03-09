@@ -5,7 +5,9 @@ using UnityEngine;
 public class CameraPlayer : MonoBehaviour
 {
 
-    [SerializeField] Vector2 mouseSens;
+    [SerializeField] private float originSens;
+    public PlayerData playerData;
+    
     [SerializeField] Transform orientation;
     Vector2 rotation;
 
@@ -26,8 +28,8 @@ public class CameraPlayer : MonoBehaviour
         {
             //  Get the mouse input
             Vector2 mouseInput;
-            mouseInput.x = Input.GetAxisRaw("Mouse X") * Time.deltaTime * mouseSens.x;
-            mouseInput.y = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * mouseSens.y;
+            mouseInput.x = Input.GetAxisRaw("Mouse X") * Time.deltaTime * originSens * playerData.mouseSensitivity;
+            mouseInput.y = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * originSens * playerData.mouseSensitivity;
 
             rotation.y += mouseInput.x;
             rotation.x += mouseInput.y;
