@@ -21,9 +21,14 @@ public enum BackgroundMusicEvents
     BGM1,
     BGM2,
     SafeRoom,
-    Ambience
+    Dialogue
 }
 
+public enum DialogoueEvents
+{
+    None,
+    
+}
 public class NewAManager : MonoBehaviour
 {
     public static NewAManager Instance;
