@@ -51359,12 +51359,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 970668171}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &970668173 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4563880114721202371, guid: 04d11ca39289f794e9a734c7102f9f2a,
-    type: 3}
-  m_PrefabInstance: {fileID: 970668171}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &970668174 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2924719014256710417, guid: 04d11ca39289f794e9a734c7102f9f2a,
@@ -51380,24 +51374,6 @@ MonoBehaviour:
 --- !u!4 &970668175 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4659519172795597927, guid: 04d11ca39289f794e9a734c7102f9f2a,
-    type: 3}
-  m_PrefabInstance: {fileID: 970668171}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &970668176 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1656164033758079041, guid: 04d11ca39289f794e9a734c7102f9f2a,
-    type: 3}
-  m_PrefabInstance: {fileID: 970668171}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &970668177 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4459605200720069588, guid: 04d11ca39289f794e9a734c7102f9f2a,
-    type: 3}
-  m_PrefabInstance: {fileID: 970668171}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &970668178 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9110250449042214248, guid: 04d11ca39289f794e9a734c7102f9f2a,
     type: 3}
   m_PrefabInstance: {fileID: 970668171}
   m_PrefabAsset: {fileID: 0}
@@ -72850,31 +72826,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 508908021}
-    - target: {fileID: 6525125360635792039, guid: 77c721aced10b8a4f89491634f6a88eb,
-        type: 3}
-      propertyPath: targetLookPoints.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6525125360635792039, guid: 77c721aced10b8a4f89491634f6a88eb,
-        type: 3}
-      propertyPath: targetLookPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 970668178}
-    - target: {fileID: 6525125360635792039, guid: 77c721aced10b8a4f89491634f6a88eb,
-        type: 3}
-      propertyPath: targetLookPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 970668177}
-    - target: {fileID: 6525125360635792039, guid: 77c721aced10b8a4f89491634f6a88eb,
-        type: 3}
-      propertyPath: targetLookPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 970668176}
-    - target: {fileID: 6525125360635792039, guid: 77c721aced10b8a4f89491634f6a88eb,
-        type: 3}
-      propertyPath: targetLookPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 970668173}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77c721aced10b8a4f89491634f6a88eb, type: 3}
 --- !u!1001 &1401369562
