@@ -1937,7 +1937,7 @@ MonoBehaviour:
   mastLabel: {fileID: 1356171414}
   volumeSlider: {fileID: 1760672897}
   sensSlider: {fileID: 477920671}
-  subtitleBool: {fileID: 0}
+  subtitleBool: {fileID: 1518247831}
   playerData: {fileID: 11400000, guid: 5398cc1eb9aa4c94289ce508763178b8, type: 2}
 --- !u!1001 &117607009
 PrefabInstance:
