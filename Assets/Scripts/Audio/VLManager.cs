@@ -11,7 +11,6 @@ public enum VoiceAction
 {
     None,
     PlayDialogue,
-    StopDialogue,
     SetParameter
 }
 
@@ -29,7 +28,6 @@ public class VLManager : MonoBehaviour
     static private string subtitleText;
     [SerializeField] private PlayerData playerData;
 
-    public static VLManager Instance;
 
     [Header("Dialogue")] 
     /*[SerializeField] private EventReference[] vLReferences = new EventReference[1];
@@ -182,28 +180,6 @@ public class VLManager : MonoBehaviour
 
         //bgmInstances[num].setParameterByName(paramName, paramValue, ignoreSeek);
     }
-    
-    /*public void StopDialogue(VoiceEvent vEvent, bool ignoreFadeOut)
-    {
-        int num = Convert.ToInt32(vEvent) - 1;
-
-        if (num < 0)
-        {
-            Debug.Log("INVALID EVENT CHOSEN!");
-            return;
-        }
-        
-        if (ignoreFadeOut)
-        {
-            Instance[num].stop(STOP_MODE.IMMEDIATE); 
-        }
-        else
-        {
-            Instance[num].stop(STOP_MODE.ALLOWFADEOUT);
-        }
-        
-        Instance[num].release();
-    }*/
     
     //VLProgrammer
         public void PlayDialogue(VoiceEvent vEvent, string key)

@@ -23,7 +23,6 @@ public class VLTrigger : MonoBehaviour
         public string keyName;
         public string paramName;
         public float paramValue;
-        public bool ignoreFadeOut;
         public bool ignoreSeek;
         public bool paramGlobal;
     }
@@ -51,9 +50,6 @@ public class VLTrigger : MonoBehaviour
                    vM.PlayDialogue(v.vEvent, v.keyName);
                    vM.dialogueInstance.start();
                    break;
-              /* case VoiceAction.StopDialogue:
-                   vM.StopDialogue(v.vEvent, v.ignoreFadeOut);
-                   break;*/
                case VoiceAction.SetParameter:
                    vM.SetParameterVL(v.vEvent, v.paramName, v.paramValue, v.ignoreSeek, v.paramGlobal);
                    break;
