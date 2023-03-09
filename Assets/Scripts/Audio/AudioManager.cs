@@ -42,23 +42,8 @@ public class AudioManager : MonoBehaviour
         //Debug.Log("Has the bank loaded? " + RuntimeManager.HasBankLoaded(masterBank));
         RuntimeManager.LoadBank(masterBank, loadSampleData);
     }
-
-
+    
     //Emitters för bakgrundsmusik
-    [Header("Voicelines")]
-    public Emitters eventEmitters;
-
-    [System.Serializable]
-
-    public struct Emitters
-    {
-        public StudioEventEmitter painting;
-        public StudioEventEmitter statue;
-        public StudioEventEmitter tidBit1;
-        public StudioEventEmitter tidBit2;
-        public StudioEventEmitter uiClick;
-    }
-
 
     public void PlayFootstep()
     {

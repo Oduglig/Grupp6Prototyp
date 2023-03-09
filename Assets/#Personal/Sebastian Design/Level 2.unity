@@ -24406,6 +24406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6223047945975542503, guid: 5796ddb0aaa5a5045b7e73e12868b965,
         type: 3}
+      propertyPath: loadSampleData
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223047945975542503, guid: 5796ddb0aaa5a5045b7e73e12868b965,
+        type: 3}
       propertyPath: eventEmitters.intro
       value: 
       objectReference: {fileID: 0}
@@ -64002,8 +64007,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
         type: 3}
+      propertyPath: loadSampleData
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: gameOverStinger.Path
+      value: snapshot:/GameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
       propertyPath: bgmReferences.Array.size
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: gameOverStinger.Guid.Data1
+      value: 1256887020
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: gameOverStinger.Guid.Data2
+      value: 1196853002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: gameOverStinger.Guid.Data3
+      value: 366671745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: gameOverStinger.Guid.Data4
+      value: 524647625
       objectReference: {fileID: 0}
     - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
         type: 3}
