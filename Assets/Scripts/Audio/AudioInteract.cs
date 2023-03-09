@@ -49,7 +49,7 @@ public class AudioInteract : Interactable
     }
 
     public AudioManager audioManager;
-    public NewAManager musicManager;
+    public MusicManager musicManager;
 
     [NonReorderable] public TriggerSettings[] audioSettings;
 
